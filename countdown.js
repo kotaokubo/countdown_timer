@@ -1,6 +1,6 @@
 
 // 東京オリンピックの日時を取得
-var olympic = new Date(2020, 7 - 1, 23, 23, 59, 59);
+var olympic = new Date(2020, 7 - 1, 24, 23, 59, 59);
 var now = new Date();
 
 // 日時が表示されるIDを取得
@@ -22,6 +22,6 @@ var timeToTheOlympic = function() {
     second.textContent = olympic.getSeconds() - now.getSeconds();
 
     // 1秒ごとに関数をあてるメソッド
-    setTimeout(timeToTheOlympic, 100);
+    setTimeout(timeToTheOlympic, 1000);
 }
 timeToTheOlympic();
